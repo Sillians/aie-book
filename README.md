@@ -44,9 +44,9 @@ This book provides a framework for adapting foundation models, which include bot
 1. What are the best practices for prompt engineering?
 1. Why does RAG work? What are the strategies for doing RAG?
 1. What’s an agent? How do I build and evaluate an agent?
-1. When to finetune a model? When not to finetune a model?
+1. When to fine-tune a model? When not to fine-tune a model?
 1. How much data do I need? How do I validate the quality of my data?
-1. How do I make my model faster, cheaper, and secure?
+1. How do I make my model faster, cheaper, and more secure?
 1. How do I create a feedback loop to improve my application continually?
 
 The book will also help you navigate the overwhelming AI landscape: types of models, evaluation benchmarks, and a seemingly infinite number of use cases and application patterns.
@@ -67,13 +67,13 @@ A real-world system often involves both traditional ML models and foundation mod
 ## Who this book is for
 
 This book is for anyone who wants to leverage foundation models to solve real-world problems. This is a technical book, so the language of this book is geared towards technical roles, including AI engineers, ML engineers, data scientists, engineering managers, and technical product managers. This book is for you if you can relate to one of the following scenarios:
-* You’re building or optimizing an AI application, whether you’re starting from scratch or looking to move beyond the demo phase into a production-ready stage. You may also be facing issues like hallucinations, security, latency, or costs, and need targeted solutions.
-* You want to streamline your team’s AI development process, making it more systematic, faster, and reliable.
+* You’re building or optimizing an AI application, whether you’re starting from scratch or looking to move beyond the demo phase into a production-ready stage. You may also be facing issues like hallucinations, security, latency, or costs and need targeted solutions.
+* You want to streamline your team’s AI development process, making it more systematic, faster, and more reliable.
 * You want to understand how your organization can leverage foundation models to improve the business’s bottom line and how to build a team to do so.
 
 You can also benefit from the book if you belong to one of the following groups:
 * Tool developers who want to identify underserved areas in AI engineering to position your products in the ecosystem.
-* Researchers who want to understand better AI use cases.
+* Researchers who want to understand AI use cases better.
 * Job candidates seeking clarity on the skills needed to pursue a career as an AI engineer.
 * Anyone wanting to better understand AI's capabilities and limitations, and how it might affect different roles.
 
@@ -100,7 +100,7 @@ I love getting to the bottom of things, so some sections dive a bit deeper into 
 See what people are talking about the book on Twitter [@aisysbooks](https://twitter.com/aisysbooks/likes)!
 
 ## Acknowledgments
-This book would've taken a lot longer to write and missed many important topics if it wasn't for so many wonderful people who helped me through the process.
+This book would've taken a lot longer to write and missed many important topics if it weren't for so many wonderful people who helped me through the process.
 
 Because the timeline for the project was tight—two years for a 150,000-word book that covers so much ground—I'm grateful to the technical reviewers who put aside their precious time to review this book so quickly.
 
@@ -110,13 +110,13 @@ Having led AI innovation at Fortune 500 companies, [Vittorio Cretella](https://w
 
 [Eugene Yan](https://eugeneyan.com/), a dear friend and amazing applied scientist, provided me with technical and emotional support. Shawn Wang ([swyx](https://x.com/swyx)), provided an important vibe check that helped me feel more confident about the book. [Sanyam Bhutani](https://x.com/bhutanisanyam1) is one of the best learners and most humble souls I know, who not only gave thoughtful written feedback but also recorded videos to explain his feedback.
 
-Kyle Krannen is a star deep learning lead who interviewed his colleagues and shared with me an amazing writeup about their finetuning process, which guided the finetuning chapter. [Mark Saroufim](https://x.com/marksaroufim), an inquisitive mind who always has his pulse on the most interesting problems, introduced me to great resources on efficiency. Both Kyle and Mark's feedback was critical in writing Chapters 7 and 9.
+Kyle Krannen is a star deep learning lead who interviewed his colleagues and shared with me an amazing write-up about their fine-tuning process, which guided the fine-tuning chapter. [Mark Saroufim](https://x.com/marksaroufim), an inquisitive mind who always has his pulse on the most interesting problems, introduced me to great resources on efficiency. Both Kyle's and Mark's feedback was critical in writing Chapters 7 and 9.
 
-[Kittipat "Bot" Kampa](https://www.linkedin.com/in/kittipat-bot-kampa-1b1965/), on top of answering my many questions, shared with me a detailed visualization of how he thinks about AI platform. I appreciate [Denys Linkov](https://www.linkedin.com/in/denyslinkov/)'s systematic approach to evaluation and platform development. [Chetan Tekur](https://www.linkedin.com/in/chetantekur/) gave great examples that helped me structure AI application patterns. I'd also like to thank [Alex (Shengzhi Li) Li](https://www.linkedin.com/in/findalexli/) and [Hien Luu](https://www.linkedin.com/in/hienluu/) for their thoughtful feedback on my draft on AI architecture.
+[Kittipat "Bot" Kampa](https://www.linkedin.com/in/kittipat-bot-kampa-1b1965/), on top of answering my many questions, shared with me a detailed visualization of how he thinks about an AI platform. I appreciate [Denys Linkov](https://www.linkedin.com/in/denyslinkov/)'s systematic approach to evaluation and platform development. [Chetan Tekur](https://www.linkedin.com/in/chetantekur/) gave great examples that helped me structure AI application patterns. I'd also like to thank [Alex (Shengzhi Li) Li](https://www.linkedin.com/in/findalexli/) and [Hien Luu](https://www.linkedin.com/in/hienluu/) for their thoughtful feedback on my draft on AI architecture.
 
 [Aileen Bui](https://www.linkedin.com/in/aileenbui/) is a treasure who shared unique feedback and examples from a product manager's perspective. Thanks [Todor Markov](https://www.linkedin.com/in/todor-markov-4aa38a67/) for the actionable advice on the RAG and Agents chapter. Thanks [Tal Kachman](https://www.linkedin.com/in/tal-kachman/) for jumping in at the last minute to push the finetuning chapter over the finish line. 
 
-There are so many wonderful people whose company and conversations gave me ideas that guide the content of this book. I tried my best to include the names of everyone who has helped me here, but due to the inherent faultiness of human memory, I undoubtedly neglected to mention many. If I forgot to include your name, please know that it wasn't because I don't appreciate your contribution, and please kindly remind me so that I can rectify as soon as possible!
+There are so many wonderful people whose company and conversations gave me ideas that guide the content of this book. I tried my best to include the names of everyone who has helped me here, but due to the inherent faultiness of human memory, I undoubtedly neglected to mention many. If I forgot to include your name, please know that it wasn't because I don't appreciate your contribution, and please kindly remind me so that I can rectify it as soon as possible!
 
 Andrew Francis, Anish Nag, [Anthony Galczak](https://www.linkedin.com/in/wgalczak/), [Anton Bacaj](https://x.com/abacaj), Balázs Galambosi, Charles Frye, Charles Packer, Chris Brousseau, Eric Hartford, Goku Mohandas, Hamel Husain, Harpreet Sahota, Hassan El Mghari, Huu Nguyen, Jeremy Howard, Jesse Silver, John Cook, [Juan Pablo Bottaro](https://www.linkedin.com/in/juan-pablo-bottaro/), Kyle Gallatin, Lance Martin, Lucio Dery, Matt Ross, Maxime Labonne, Miles Brundage, Nathan Lambert, Omar Khattab, [Phong Nguyen](https://www.linkedin.com/in/xphongvn/), Purnendu Mukherjee, Sam Reiswig, Sebastian Raschka, Shahul ES, Sharif Shameem, Soumith Chintala, Teknium, Tim Dettmers, Undi5, Val Andrei Fajardo, Vern Liang, Victor Sanh, Wing Lian, Xiquan Cui, Ying Sheng, and Kristofer.
 
